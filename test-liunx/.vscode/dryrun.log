@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/mnt/c/Users/truth/OneDrive/바탕 화면/test-liunx'
+make: 'hello' is up to date.
+make: Leaving directory '/mnt/c/Users/truth/OneDrive/바탕 화면/test-liunx'
+ 

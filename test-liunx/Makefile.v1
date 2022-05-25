@@ -1,0 +1,15 @@
+#First Example
+hello : main.o helper.o
+	gcc -o hello main.o helper.o
+main.o : main.c
+	gcc -c main.c
+helper.o : helper.c helper.h
+	gcc -c helper.c
+	
+# this tells make not to do the timestamp checking
+# for targets that aren't files
+.PHONY clean run
+clean:
+	rm -f hello main.o helper.o
+run: hello
+	./hello
